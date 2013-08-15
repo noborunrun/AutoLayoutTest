@@ -455,6 +455,7 @@
 				F686E27717BCE95500D3D0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F686E27817BCE95500D3D0DF /* Build configuration list for PBXNativeTarget "ALAutoLayoutTestTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +464,7 @@
 				F686E27A17BCE95500D3D0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
