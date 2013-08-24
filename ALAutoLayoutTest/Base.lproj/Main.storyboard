@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4504" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,8 +21,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.90278957199999998" blue="0.1054860448" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgF-No-v0y">
+                                <rect key="frame" x="0.0" y="468" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.047118742969354699" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="62b-jg-JU9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NxZ-cf-SqE">
@@ -39,11 +44,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="62b-jg-JU9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="7L0-bW-mTi"/>
+                            <constraint firstItem="kgF-No-v0y" firstAttribute="top" secondItem="62b-jg-JU9" secondAttribute="bottom" id="A4O-Dy-N8F"/>
+                            <constraint firstItem="kgF-No-v0y" firstAttribute="leading" secondItem="ROv-z7-orL" secondAttribute="leading" id="ALS-wc-q7C"/>
                             <constraint firstItem="62b-jg-JU9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JYS-KP-sMp"/>
-                            <constraint firstAttribute="bottom" secondItem="62b-jg-JU9" secondAttribute="bottom" constant="50" id="W6r-9y-IMP"/>
+                            <constraint firstAttribute="bottom" secondItem="62b-jg-JU9" secondAttribute="bottom" constant="100" id="W6r-9y-IMP"/>
                             <constraint firstAttribute="bottom" secondItem="ROv-z7-orL" secondAttribute="bottom" id="hTP-gF-L3Q"/>
+                            <constraint firstItem="kgF-No-v0y" firstAttribute="trailing" secondItem="ROv-z7-orL" secondAttribute="trailing" id="iAD-ba-8bm"/>
                             <constraint firstItem="62b-jg-JU9" firstAttribute="trailing" secondItem="ROv-z7-orL" secondAttribute="trailing" id="iYy-wW-dIN"/>
-                            <constraint firstItem="ROv-z7-orL" firstAttribute="top" secondItem="62b-jg-JU9" secondAttribute="bottom" id="sgw-1N-i5a"/>
+                            <constraint firstItem="eDX-cH-qNh" firstAttribute="top" secondItem="kgF-No-v0y" secondAttribute="bottom" priority="55" constant="50" id="kkb-v5-Kbd"/>
+                            <constraint firstItem="ROv-z7-orL" firstAttribute="top" secondItem="kgF-No-v0y" secondAttribute="bottom" id="qOW-6F-6zF"/>
                             <constraint firstItem="62b-jg-JU9" firstAttribute="leading" secondItem="ROv-z7-orL" secondAttribute="leading" id="voy-6i-WoZ"/>
                             <constraint firstAttribute="trailing" secondItem="62b-jg-JU9" secondAttribute="trailing" id="wuz-KJ-P6f"/>
                         </constraints>
@@ -52,6 +61,7 @@
                     <connections>
                         <outlet property="mainView" destination="62b-jg-JU9" id="Fe5-qa-aqJ"/>
                         <outlet property="mainViewBottomLayoutConstraint" destination="W6r-9y-IMP" id="bfS-3o-S4U"/>
+                        <outlet property="middleViewButtomConstraint" destination="kkb-v5-Kbd" id="D7T-I1-rbc"/>
                         <outlet property="subView" destination="ROv-z7-orL" id="2VM-58-iKI"/>
                     </connections>
                 </viewController>
